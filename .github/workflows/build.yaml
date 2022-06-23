@@ -58,7 +58,7 @@ jobs:
           token: ${{ secrets.ACTION_TOKEN }}
           path: manifest-repo
 
-      - name: Update Kubernetes resources
+      - name: Update Kubernetes resources 
         run: |
           echo ${{ steps.login-ecr.outputs.registry }}
           echo ${{ steps.image-info.outputs.ecr_repository }}
